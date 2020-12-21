@@ -4,6 +4,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
+    <header>
     <nav className="navbar navbar-dark">
       <Link to="/" className="navbar-brand">
         Aubrey Polk
@@ -19,7 +20,10 @@ const Navbar = () => {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse text-right" id="navbarNavAltMarkup">
+      <div
+        className="collapse navbar-collapse text-right"
+        id="navbarNavAltMarkup"
+      >
         <div className="navbar-nav ml-auto">
           <NavLink to="/" className="nav-link">
             Home
@@ -36,6 +40,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+    </header>
   );
 };
 
