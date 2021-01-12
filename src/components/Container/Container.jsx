@@ -2,8 +2,8 @@ import React from "react";
 
 const Container = (props) => {
   return (
-    <main className="flex-fill">
-      <div className={`container ${props.className}`}>{props.children}</div>
+    <main className={props.className}>
+      <div className={props.containerType}>{props.children}</div>
     </main>
   );
 };
