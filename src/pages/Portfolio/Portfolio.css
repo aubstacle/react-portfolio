@@ -1,0 +1,7 @@
+.hero {
+  background-image: url("../../images/Portfolio.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+}
