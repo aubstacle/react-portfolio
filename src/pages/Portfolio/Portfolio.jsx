@@ -1,6 +1,6 @@
 import Container from "../../components/Container/Container";
 import "../Home/Home.css";
-import Jumbotron from "react-bootstrap/Jumbotron"
+import Jumbotron from "react-bootstrap/Jumbotron";
 
 const Portfolio = () => {
   return (
