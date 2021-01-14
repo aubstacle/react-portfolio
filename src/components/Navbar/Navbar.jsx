@@ -1,47 +1,28 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
+import Navbar from "react-bootstrap/Navbar";
 
-const Navbar = () => {
+const Nav = () => {
   return (
-    <header>
-      <nav className="navbar navbar-dark">
-        <Link to="/" className="navbar-brand">
-          Aubrey Polk
-        </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div
-          className="collapse navbar-collapse text-right"
-          id="navbarNavAltMarkup"
-        >
-          <div className="navbar-nav ml-auto">
-            <NavLink to="/" className="nav-link">
-              Home
-            </NavLink>
-            <NavLink to="/portfolio" className="nav-link">
-              Portfolio
-            </NavLink>
-            <NavLink to="/about" className="nav-link">
-              About
-            </NavLink>
-            <NavLink to="/contact" className="nav-link">
-              Contact
-            </NavLink>
-          </div>
-        </div>
-      </nav>
-    </header>
+    <Navbar>
+      <Link to="/" className="navbar-brand">
+        Aubrey Polk
+      </Link>
+      <NavLink to="/" className="nav-link float-right">
+        Home
+      </NavLink>
+      <NavLink to="/portfolio" className="nav-link float-right">
+        Portfolio
+      </NavLink>
+      <NavLink to="/about" className="nav-link float-right">
+        About
+      </NavLink>
+      <NavLink to="/contact" className="nav-link float-right">
+        Contact
+      </NavLink>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default Nav;
