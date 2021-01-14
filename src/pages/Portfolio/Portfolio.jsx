@@ -8,11 +8,11 @@ const Portfolio = () => {
       className="flex-fill home-bg"
       containerType="container-fluid mb-5"
     >
-        <Jumbotron className="hero">
-          <Container>
-            <h1 className="text-center text-white">Portfolio</h1>
-          </Container>
-        </Jumbotron>
+      <Jumbotron className="hero">
+        <Container>
+          <h1 className="text-center text-white">Portfolio</h1>
+        </Container>
+      </Jumbotron>
     </Container>
   );
 };
